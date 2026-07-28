@@ -4,22 +4,22 @@ cask "shelfofshame" do
 
   on_macos do
     on_intel do
-      sha256 "6f63d85dec0ea4b2dacd1edd216bfccc22ac700fc0520cddb622be32b5481207"
+      sha256 "bc32fa03f435988312fdb0cbe7f395ed6ea457d08fe90ba7904f531574c75629"
       url "https://github.com/richardwooding/shelfofshame/releases/download/v#{version}/shelfofshame_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "1139eb5c78833121f46aea6a2d0e3bf59fc8362124ef9f7a4d4ab5bc73f22f0e"
+      sha256 "62c9a9796cdf99659cb6e7f1a0721f429fcead138ad2d3f13f9a7beb8ddb374d"
       url "https://github.com/richardwooding/shelfofshame/releases/download/v#{version}/shelfofshame_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "a12de1cb46d35d3a82d7eb116001af9ab2dee942a6c6e0caf103a03940f82847"
+      sha256 "f588ed14c712f4b83959ee4e8075122636be2fc2b1277a84d4d82510ea49f829"
       url "https://github.com/richardwooding/shelfofshame/releases/download/v#{version}/shelfofshame_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "a4c5497064d8a9b08380f6bdd89114557ae05bd49396f8d6d2119d316bdd99c6"
+      sha256 "c69cb0273d52cf2b8edaa1b06dcaebedab7d812eb5d86ab21387019eab8c88c5"
       url "https://github.com/richardwooding/shelfofshame/releases/download/v#{version}/shelfofshame_#{version}_linux_arm64.tar.gz"
     end
   end
