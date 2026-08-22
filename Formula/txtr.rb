@@ -5,21 +5,21 @@
 class Txtr < Formula
   desc "GNU strings clone written in Go - extracts printable strings from binary files"
   homepage "https://github.com/richardwooding/txtr"
-  version "2.11.2"
+  version "2.11.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/richardwooding/txtr/releases/download/v2.11.2/txtr_2.11.2_darwin_amd64.tar.gz"
-      sha256 "d108c579bc6a9d02e140bb9e3c8d56d048530a8b14e7b728b11fb986ead3b1a6"
+      url "https://github.com/richardwooding/txtr/releases/download/v2.11.3/txtr_2.11.3_darwin_amd64.tar.gz"
+      sha256 "b44f53585b8b1073b31d819b1a2ebdaa2883e85e62ebcf47ef226d86c6c50ac9"
 
       define_method(:install) do
         bin.install "txtr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/richardwooding/txtr/releases/download/v2.11.2/txtr_2.11.2_darwin_arm64.tar.gz"
-      sha256 "5aa8477f2344fee0c384eb326f7cea478519bf51b2901920bd67bf15b2d1c76c"
+      url "https://github.com/richardwooding/txtr/releases/download/v2.11.3/txtr_2.11.3_darwin_arm64.tar.gz"
+      sha256 "674b760ef5e711c971f1c6a32bd83aee5c46d07cde40a0d4aecf6ddc516b2bd4"
 
       define_method(:install) do
         bin.install "txtr"
@@ -29,22 +29,22 @@ class Txtr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/richardwooding/txtr/releases/download/v2.11.2/txtr_2.11.2_linux_amd64.tar.gz"
-      sha256 "dea06a8b5dac8ebbde284d3e79b6f5e226ebccc0d8876308bc7a18fd179b0f54"
+      url "https://github.com/richardwooding/txtr/releases/download/v2.11.3/txtr_2.11.3_linux_amd64.tar.gz"
+      sha256 "7b2b36051063ed04adf7085970ee3482f329ff8b70895c29c4e36f6ae55e2ae9"
       define_method(:install) do
         bin.install "txtr"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/richardwooding/txtr/releases/download/v2.11.2/txtr_2.11.2_linux_armv6.tar.gz"
-      sha256 "b3b66a57141598fdd3a4bf3050852aa1ad97519575ad0cb27c9f737b3285520b"
+      url "https://github.com/richardwooding/txtr/releases/download/v2.11.3/txtr_2.11.3_linux_armv6.tar.gz"
+      sha256 "7eb8892f07db12c550200af2ad3be38c42456a5f360d2ec496f58de46fcd2586"
       define_method(:install) do
         bin.install "txtr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/richardwooding/txtr/releases/download/v2.11.2/txtr_2.11.2_linux_arm64.tar.gz"
-      sha256 "3b22fbd41ae2de50ccec11f18839c178b51af61cc09b2e1bc5e7db504490a13d"
+      url "https://github.com/richardwooding/txtr/releases/download/v2.11.3/txtr_2.11.3_linux_arm64.tar.gz"
+      sha256 "91862b2e20bd1ecdb6f9c3b48ca30a4a490c2dc9e6dcaa6c6351979f58be956f"
       define_method(:install) do
         bin.install "txtr"
       end
